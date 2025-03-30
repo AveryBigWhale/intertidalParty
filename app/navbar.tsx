@@ -1,8 +1,9 @@
 "use client"
 
 import { useState } from 'react';
-import Image from 'next/image';
+// import Image from 'next/image';
 import Link from 'next/link';
+import ImageLoader from '../components/ImageLoader'; // Adjust the path as necessary
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,13 +15,24 @@ const Navbar = () => {
   return (
     <div className="container mx-auto flex justify-between items-center px-6">
       <div className='flex items-center'>
-        <div className="mr-2 relative w-16 h-16 rounded-full overflow-hidden shadow-lg">
-          <Image
+        <div className="mr-2 relative w-16 h-16 rounded-full overflow-hidden shadow-lg"
+          style={{
+            // position: 'absolute',
+            // width: '100%',
+            // height: '100%',
+            // backgroundImage: "url('https://averybigwhale.github.io/entry/public/puzzle-bg.png')",
+            // backgroundImage: "url('/puzzle-bg.png')",
+            backgroundImage: `url(${ImageLoader({ src: '/emblem.png' })})`,
+            // backgroundSize: 'cover',
+            // // backgroundSize: `${windowSize.width}px ${windowSize.height}px`,
+            // backgroundPosition: 'center',
+          }}>
+          {/* <Image
             src="/emblem.png" // Replace with your emblem image path
             layout="fill"
             objectFit="cover"
             alt="黨徽"
-          />
+          /> */}
         </div>
         <div>
           <h1 className="text-xl font-bold text-intertidalDarkMain">潮間黨</h1>
