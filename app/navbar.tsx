@@ -23,9 +23,9 @@ const Navbar = () => {
             // backgroundImage: "url('https://averybigwhale.github.io/entry/public/puzzle-bg.png')",
             // backgroundImage: "url('/puzzle-bg.png')",
             backgroundImage: `url(${ImageLoader({ src: '/emblem.png' })})`,
-            // backgroundSize: 'cover',
+            backgroundSize: 'cover',
             // // backgroundSize: `${windowSize.width}px ${windowSize.height}px`,
-            // backgroundPosition: 'center',
+            backgroundPosition: 'center',
           }}>
           {/* <Image
             src="/emblem.png" // Replace with your emblem image path
