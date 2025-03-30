@@ -15,6 +15,7 @@ import uncleSam from "../public/uncleSam.png"; // 新增導入
 import lecture from "../public/lecture.png"; // 新增導入
 import budget from "../public/budget.png"; // 新增導入
 import health from "../public/health.png"; // 新增導入
+import banner from "../public/banner.png"; // 新增導入
 // import Navbar from "./navbar";
 // import ImageLoader from '../components/ImageLoader'; // Adjust the path as necessary
 
@@ -56,7 +57,8 @@ export default function HomePage() {
         // }}
         >
         <Image
-          src="../public/banner.png"
+          // src="../public/banner.png"
+          src={banner}
           layout="fill"
           objectFit="cover"
           alt="潮汐革命 共創未來"
