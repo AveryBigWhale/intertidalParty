@@ -9,12 +9,15 @@ import './home.css';
 import './globals.css';
 import newspaperIcon from "../public/newspaper_icon.svg"; // Adjust the path accordingly
 import loudspeakerIcon from "../public/loudspeaker_icon.svg"; // Adjust the path accordingly
+import elected from "../public/elected.png"; // Adjust the path accordingly
 // import Navbar from "./navbar";
 import ImageLoader from '../components/ImageLoader'; // Adjust the path as necessary
 
+
 export default function HomePage() {
   const news = [
-    { title: "潮間黨總統上任", image: "/elected.png" },
+    // { title: "潮間黨總統上任", image: "/elected.png" },
+    { title: "潮間黨總統上任", image: elected  },
     { title: "潮間大遊行", image: "/protest.png" },
     { title: "山姆大叔需要你", image: "/uncleSam.png" },
     { title: "潮間黨總統上任", image: "/elected.png" },
@@ -83,12 +86,13 @@ function Section({ title, data }: { title: string; data: { title: string; image:
           // alt="Newspaper Icon" width={24} height={24} className="mr-2" />
         ) : (
           // <loudspeakerIcon />
+          <Image src={loudspeakerIcon} alt="Newspaper Icon" width={24} height={24} className="mr-2" />
           // <ImageLoader src={loudspeakerIcon} />
-          <div
-            style={{
-              backgroundImage: `url(${ImageLoader({ src: loudspeakerIcon })})`,
-            }}
-          />
+          // <div
+          //   style={{
+          //     backgroundImage: `url(${ImageLoader({ src: loudspeakerIcon })})`,
+          //   }}
+          // />
           // alt="Loudspeaker Icon" width={24} height={24} className="mr-2" />
         )}
         {title}
@@ -112,18 +116,14 @@ function Section({ title, data }: { title: string; data: { title: string; image:
         {data.map((item, index) => (
           <SwiperSlide key={index}>
             <div className="bg-white rounded-2xl shadow-md h-1/2 p-0 m-0">
-              {/* <ImageLoader
+              <Image
                 src={item.image}
-                // width={300}
-                // height={200}
-                // className="w-full h-48 object-cover rounded-t-2xl" 
-                // alt={item.title}
-              /> */}
-              <div
-                style={{
-                  backgroundImage: `url(${ImageLoader({ src: item.image })})`,
-                }}
+                width={300}
+                height={200}
+                className="w-full h-48 object-cover rounded-t-2xl" 
+                alt={item.title}
               />
+              
               <h3 className="text-md font-semibold text-center mt-2">{item.title}</h3>
             </div>
           </SwiperSlide>
