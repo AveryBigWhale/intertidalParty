@@ -9,6 +9,8 @@ export default function NewsletterForm() {
     e.preventDefault();
     setStatus('loading');
     try {
+      console.log("SMTP_HOST:", process.env.SMTP_HOST);
+      
       const res = await fetch('/api/subscribe', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
