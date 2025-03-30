@@ -1,0 +1,20 @@
+.my-swiper .swiper-pagination {
+  position: relative;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* text-align: center; */
+  transition: opacity .3s;
+  z-index: 10;
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  position: relative;
+  bottom: 10px; /* Adjust this value as needed */
+  left: 50%;
+  width: 100%;
+  text-align: center; /* Center the pagination bullets */
+}
