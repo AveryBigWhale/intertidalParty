@@ -10,6 +10,7 @@ module.exports = {
       extend: {
         colors: {
           customPurple: '#290484', // 添加自定義顏色
+          
         },
       },
     },

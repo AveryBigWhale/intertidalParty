@@ -40,7 +40,7 @@ export default function HomePage() {
   ];
 
   return (
-    <div className="bg-blue-200 relative">
+    <div className="bg-white relative">
       
       {/* Hero Section */}
       <div className="relative w-full h-72"

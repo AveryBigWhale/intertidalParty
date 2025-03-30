@@ -7,7 +7,7 @@ const isProd = process.env.NODE_ENV === 'production'
 
 const nextConfig = {
   basePath: isProd ? '/intertidal' : '',
-  output: 'export',
+  // output: 'export',
   distDir: 'dist',
   // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
   // trailingSlash: true,

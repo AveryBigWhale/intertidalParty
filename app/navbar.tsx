@@ -13,52 +13,60 @@ const Navbar = () => {
   };
 
   return (
-    <div className="container mx-auto flex justify-between items-center px-6">
-      <div className='flex items-center'>
-        <div className="mr-2 relative w-16 h-16 rounded-full overflow-hidden shadow-lg"
-          style={{
-            // position: 'absolute',
-            // width: '100%',
-            // height: '100%',
-            // backgroundImage: "url('https://averybigwhale.github.io/entry/public/puzzle-bg.png')",
-            // backgroundImage: "url('/puzzle-bg.png')",
-            backgroundImage: `url(${ImageLoader({ src: '/emblem.png' })})`,
-            backgroundSize: 'cover',
-            // // backgroundSize: `${windowSize.width}px ${windowSize.height}px`,
-            backgroundPosition: 'center',
-          }}>
-          {/* <Image
-            src="/emblem.png" // Replace with your emblem image path
-            layout="fill"
-            objectFit="cover"
-            alt="黨徽"
-          /> */}
+    <header className="relative bg-intertidalLightMain">
+      <div className="container mx-auto flex justify-between items-center px-6">
+        <div className={`flex items-center ${isOpen ? 'hidden' : ''}`}>
+          <div className="mr-2 relative w-16 h-16 rounded-full overflow-hidden shadow-lg"
+            style={{
+              backgroundImage: `url(${ImageLoader({ src: '/emblem.png' })})`,
+              backgroundSize: 'cover',
+              // // backgroundSize: `${windowSize.width}px ${windowSize.height}px`,
+              backgroundPosition: 'center',
+            }}>
+          </div>
+          <div>
+            <h1 className="text-xl font-bold text-intertidalDarkMain">潮間黨</h1>
+            <h1 className="text-lg font-bold text-intertidalDarkMain">Intertidal Party</h1>
+          </div>
         </div>
-        <div>
-          <h1 className="text-xl font-bold text-intertidalDarkMain">潮間黨</h1>
-          <h1 className="text-lg font-bold text-intertidalDarkMain">Intertidal Party</h1>
+        
+        
+        {/* {isOpen && ( */}
+        <nav className={`md:flex ${isOpen ? 'flex' : 'hidden'} md:static bg-intertidalLightMain w-full md:w-auto`}>
+          <ul className="flex flex-col md:flex-row space-y-2 md:space-x-4 text-intertidalDarkMain p-4">
+            <li>
+              <Link href="/" className="block hover:text-gray-700">首頁</Link>
+            </li>
+            <li>
+              <Link href="/about" className="block hover:text-gray-700 ">關於潮間黨</Link>
+            </li>
+            <li>
+              <Link href="/news" className="block hover:text-gray-700 ">最新消息</Link>
+            </li>
+            <li>
+              <Link href="/subscribe" className="
+                block md:inline
+                text-customRed
+                border
+                border-3
+                border-customRed
+                rounded-full
+                px-4
+                py-2
+                hover:bg-customRed
+                hover:text-white
+                transition-colors">訂閱電子報</Link>
+            </li>
+          </ul>
+        </nav>
+        <div className="md:hidden">
+          <button onClick={toggleMenu} className="text-intertidalDarkMain text-4xl w-25 h-25 flex justify-center items-center">
+            {isOpen ? '✖️' : '☰'}
+          </button>
         </div>
+        {/* )} */}
       </div>
-      
-      <div className="md:hidden">
-        <button onClick={toggleMenu} className="text-intertidalDarkMain">
-          {isOpen ? '✖️' : '☰'} {/* Hamburger icon */}
-        </button>
-      </div>
-      <nav className={`md:flex ${isOpen ? 'block' : 'hidden'} absolute md:static bg-intertidalLightMain w-full md:w-auto`}>
-        <ul className="flex flex-col md:flex-row space-x-0 md:space-x-4 text-intertidalDarkMain">
-          <li>
-            <Link href="/" className="hover:text-gray-700">首頁</Link>
-          </li>
-          <li>
-            <Link href="/about" className="hover:text-gray-700">關於潮間黨</Link>
-          </li>
-          <li>
-            <Link href="/news" className="hover:text-gray-700">最新消息</Link>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    </header>
   );
 };
 
