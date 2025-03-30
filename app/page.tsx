@@ -16,7 +16,7 @@ import lecture from "../public/lecture.png"; // 新增導入
 import budget from "../public/budget.png"; // 新增導入
 import health from "../public/health.png"; // 新增導入
 // import Navbar from "./navbar";
-import ImageLoader from '../components/ImageLoader'; // Adjust the path as necessary
+// import ImageLoader from '../components/ImageLoader'; // Adjust the path as necessary
 
 
 export default function HomePage() {
