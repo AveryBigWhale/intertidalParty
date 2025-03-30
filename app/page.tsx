@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+// import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from 'swiper/modules';
 
@@ -10,6 +10,7 @@ import './globals.css';
 import newspaperIcon from "../public/newspaper_icon.svg"; // Adjust the path accordingly
 import loudspeakerIcon from "../public/loudspeaker_icon.svg"; // Adjust the path accordingly
 // import Navbar from "./navbar";
+import ImageLoader from '../components/ImageLoader'; // Adjust the path as necessary
 
 export default function HomePage() {
   const news = [
@@ -35,11 +36,11 @@ export default function HomePage() {
       
       {/* Hero Section */}
       <div className="relative w-full h-72">
-        <Image
+        <ImageLoader
           src="/banner.png"
-          layout="fill"
-          objectFit="cover"
-          alt="潮汐革命 共創未來"
+          // layout="fill"
+          // objectFit="cover"
+          // alt="潮汐革命 共創未來"
         />
         <div className="absolute inset-0 bg-black/40 flex justify-center items-center">
           <h1 className="text-white text-4xl font-bold">潮汐革命 共創未來</h1>
@@ -48,7 +49,7 @@ export default function HomePage() {
 
       {/* 最新消息 */}
       <div className="text-intertidalDarkMain">
-        <Section title="最新消息"  data={news} />
+        <Section title="最新消息" data={news} />
       </div>
       
       {/* 政策宣傳 */}
@@ -66,10 +67,12 @@ function Section({ title, data }: { title: string; data: { title: string; image:
       <h2 className="text-2xl font-bold text-intertidalDarkMain flex items-center mb-4">
         {/* <span className="mr-2">{title === "最新消息" ? "📰" : "📢"}</span> {title} */}
         {title === "最新消息" ? (
-          <Image src={newspaperIcon} alt="Newspaper Icon" width={24} height={24} className="mr-2" />
+          <ImageLoader src={newspaperIcon} />
+          // alt="Newspaper Icon" width={24} height={24} className="mr-2" />
         ) : (
           // <loudspeakerIcon />
-          <Image src={loudspeakerIcon} alt="Loudspeaker Icon" width={24} height={24} className="mr-2" />
+          <ImageLoader src={loudspeakerIcon} />
+          // alt="Loudspeaker Icon" width={24} height={24} className="mr-2" />
         )}
         {title}
       </h2>
@@ -92,12 +95,12 @@ function Section({ title, data }: { title: string; data: { title: string; image:
         {data.map((item, index) => (
           <SwiperSlide key={index}>
             <div className="bg-white rounded-2xl shadow-md h-1/2 p-0 m-0">
-              <Image
+              <ImageLoader
                 src={item.image}
-                width={300}
-                height={200}
-                className="w-full h-48 object-cover rounded-t-2xl" 
-                alt={item.title}
+                // width={300}
+                // height={200}
+                // className="w-full h-48 object-cover rounded-t-2xl" 
+                // alt={item.title}
               />
               <h3 className="text-md font-semibold text-center mt-2">{item.title}</h3>
             </div>
