@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image"; // Add StaticImageData import
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from 'swiper/modules';
 
@@ -16,8 +16,8 @@ import ImageLoader from '../components/ImageLoader'; // Adjust the path as neces
 
 export default function HomePage() {
   const news = [
+    { title: "潮間黨總統上任", image: elected },
     // { title: "潮間黨總統上任", image: "/elected.png" },
-    { title: "潮間黨總統上任", image: elected  },
     { title: "潮間大遊行", image: "/protest.png" },
     { title: "山姆大叔需要你", image: "/uncleSam.png" },
     { title: "潮間黨總統上任", image: "/elected.png" },
@@ -75,7 +75,7 @@ export default function HomePage() {
   );
 }
 
-function Section({ title, data }: { title: string; data: { title: string; image: string }[] }) {
+function Section({ title, data }: { title: string; data: { title: string; image: string | StaticImageData }[] }) {
   return (
     <div className="container mx-auto py-10">
       <h2 className="text-2xl font-bold text-intertidalDarkMain flex items-center mb-4">
@@ -123,7 +123,11 @@ function Section({ title, data }: { title: string; data: { title: string; image:
                 className="w-full h-48 object-cover rounded-t-2xl" 
                 alt={item.title}
               />
-              
+              {/* <div
+                style={{
+                  backgroundImage: `url(${ImageLoader({ src: item.image })})`,
+                }}
+              /> */}
               <h3 className="text-md font-semibold text-center mt-2">{item.title}</h3>
             </div>
           </SwiperSlide>
