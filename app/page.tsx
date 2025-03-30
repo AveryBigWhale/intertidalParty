@@ -1,6 +1,6 @@
 "use client";
 
-// import Image from "next/image";
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from 'swiper/modules';
 
@@ -36,11 +36,11 @@ export default function HomePage() {
       
       {/* Hero Section */}
       <div className="relative w-full h-72">
-        <ImageLoader
+        <Image
           src="/banner.png"
-          // layout="fill"
-          // objectFit="cover"
-          // alt="潮汐革命 共創未來"
+          layout="fill"
+          objectFit="cover"
+          alt="潮汐革命 共創未來"
         />
         <div className="absolute inset-0 bg-black/40 flex justify-center items-center">
           <h1 className="text-white text-4xl font-bold">潮汐革命 共創未來</h1>
@@ -67,11 +67,17 @@ function Section({ title, data }: { title: string; data: { title: string; image:
       <h2 className="text-2xl font-bold text-intertidalDarkMain flex items-center mb-4">
         {/* <span className="mr-2">{title === "最新消息" ? "📰" : "📢"}</span> {title} */}
         {title === "最新消息" ? (
-          <ImageLoader src={newspaperIcon} />
+          <Image src={newspaperIcon} alt="Newspaper Icon" width={24} height={24} className="mr-2" />
+          // <ImageLoader src={newspaperIcon} />
           // alt="Newspaper Icon" width={24} height={24} className="mr-2" />
         ) : (
           // <loudspeakerIcon />
-          <ImageLoader src={loudspeakerIcon} />
+          // <ImageLoader src={loudspeakerIcon} />
+          <div
+            style={{
+              backgroundImage: `url(${ImageLoader({ src: loudspeakerIcon })})`,
+            }}
+          />
           // alt="Loudspeaker Icon" width={24} height={24} className="mr-2" />
         )}
         {title}
@@ -95,12 +101,17 @@ function Section({ title, data }: { title: string; data: { title: string; image:
         {data.map((item, index) => (
           <SwiperSlide key={index}>
             <div className="bg-white rounded-2xl shadow-md h-1/2 p-0 m-0">
-              <ImageLoader
+              {/* <ImageLoader
                 src={item.image}
                 // width={300}
                 // height={200}
                 // className="w-full h-48 object-cover rounded-t-2xl" 
                 // alt={item.title}
+              /> */}
+              <div
+                style={{
+                  backgroundImage: `url(${ImageLoader({ src: item.image })})`,
+                }}
               />
               <h3 className="text-md font-semibold text-center mt-2">{item.title}</h3>
             </div>
