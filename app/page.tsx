@@ -10,28 +10,32 @@ import './globals.css';
 import newspaperIcon from "../public/newspaper_icon.svg"; // Adjust the path accordingly
 import loudspeakerIcon from "../public/loudspeaker_icon.svg"; // Adjust the path accordingly
 import elected from "../public/elected.png"; // Adjust the path accordingly
+import protest from "../public/protest.png"; // 新增導入
+import uncleSam from "../public/uncleSam.png"; // 新增導入
+import lecture from "../public/lecture.png"; // 新增導入
+import budget from "../public/budget.png"; // 新增導入
+import health from "../public/health.png"; // 新增導入
 // import Navbar from "./navbar";
 import ImageLoader from '../components/ImageLoader'; // Adjust the path as necessary
 
 
 export default function HomePage() {
   const news = [
+    { title: "潮間黨總統上任", image: elected  },
+    { title: "潮間大遊行", image: protest }, // 更新為導入的變量
+    { title: "山姆大叔需要你", image: uncleSam }, // 更新為導入的變量
     { title: "潮間黨總統上任", image: elected },
-    // { title: "潮間黨總統上任", image: "/elected.png" },
-    { title: "潮間大遊行", image: "/protest.png" },
-    { title: "山姆大叔需要你", image: "/uncleSam.png" },
-    { title: "潮間黨總統上任", image: "/elected.png" },
-    { title: "潮間大遊行", image: "/protest.png" },
-    { title: "山姆大叔需要你", image: "/uncleSam.png" },
+    { title: "潮間大遊行", image: protest }, // 更新為導入的變量
+    { title: "山姆大叔需要你", image: uncleSam }, // 更新為導入的變量
   ];
 
   const policies = [
-    { title: "教育體制革命", image: "/lecture.png" },
-    { title: "強化生化研發預算", image: "/budget.png" },
-    { title: "全民長壽健康計劃", image: "/health.png" },
-    { title: "教育體制革命", image: "/lecture.png" },
-    { title: "強化生化研發預算", image: "/budget.png" },
-    { title: "全民長壽健康計劃", image: "/health.png" },
+    { title: "教育體制革命", image: lecture }, // 更新為導入的變量
+    { title: "強化生化研發預算", image: budget }, // 更新為導入的變量
+    { title: "全民長壽健康計劃", image: health }, // 更新為導入的變量
+    { title: "教育體制革命", image: lecture }, // 更新為導入的變量
+    { title: "強化生化研發預算", image: budget }, // 更新為導入的變量
+    { title: "全民長壽健康計劃", image: "../public/health.png" }, // 更新為導入的變量
   ];
 
   return (
