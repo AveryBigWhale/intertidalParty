@@ -20,6 +20,7 @@ export default function NewsletterForm() {
         setStatus('error');
       }
     } catch (err) {
+      console.error(err); // Log the error
       setStatus('error');
     }
   };
