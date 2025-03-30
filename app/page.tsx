@@ -36,7 +36,7 @@ export default function HomePage() {
     { title: "全民長壽健康計劃", image: health }, // 更新為導入的變量
     { title: "教育體制革命", image: lecture }, // 更新為導入的變量
     { title: "強化生化研發預算", image: budget }, // 更新為導入的變量
-    { title: "全民長壽健康計劃", image: "../public/health.png" }, // 更新為導入的變量
+    { title: "全民長壽健康計劃", image: health }, // 更新為導入的變量
   ];
 
   return (
