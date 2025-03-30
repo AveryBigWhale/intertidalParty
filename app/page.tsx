@@ -49,10 +49,6 @@ export default function HomePage() {
         }}>
         <Image
           src="/banner.png"
-
-          
-
-
           layout="fill"
           objectFit="cover"
           alt="潮汐革命 共創未來"
