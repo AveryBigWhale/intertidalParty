@@ -35,9 +35,24 @@ export default function HomePage() {
     <div className="bg-blue-200 relative">
       
       {/* Hero Section */}
-      <div className="relative w-full h-72">
+      <div className="relative w-full h-72"
+        style={{
+          // position: 'absolute',
+          // width: '100%',
+          // height: '100%',
+          // backgroundImage: "url('https://averybigwhale.github.io/entry/public/puzzle-bg.png')",
+          // backgroundImage: "url('/puzzle-bg.png')",
+          backgroundImage: `url(${ImageLoader({ src: '/banner.png' })})`,
+          backgroundSize: 'cover',
+          // // backgroundSize: `${windowSize.width}px ${windowSize.height}px`,
+          backgroundPosition: 'center',
+        }}>
         <Image
           src="/banner.png"
+
+          
+
+
           layout="fill"
           objectFit="cover"
           alt="潮汐革命 共創未來"
