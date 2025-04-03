@@ -1,3 +1,4 @@
+
 import nodemailer from 'nodemailer';
 
 export async function POST(request) {
@@ -20,6 +21,11 @@ export async function POST(request) {
         pass: process.env.SMTP_PASS, // 你的 SMTP 密碼
       },
     });
+
+      // MAIL_USER_EMAIL
+      // MAIL_USER_PASSWORD
+      // MAIL_FROM
+      // MAIL_TO
 
     // 設定預先撰寫好的郵件內容
     const mailOptions = {
