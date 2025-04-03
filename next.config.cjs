@@ -6,6 +6,8 @@
 const isProd = process.env.NODE_ENV === 'production'
 
 const nextConfig = {
+  reactStrictMode: true,
+  
   basePath: isProd ? '/intertidal' : '',
   // output: 'export',
   distDir: 'dist',
