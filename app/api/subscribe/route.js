@@ -6,6 +6,7 @@ export async function POST(request) {
     // 從請求中解析 JSON 資料，取得 email 欄位
     const { email } = await request.json();
     if (!email) {
+      
       return new Response(JSON.stringify({ error: 'Email is required' }), {
         status: 400,
       });
