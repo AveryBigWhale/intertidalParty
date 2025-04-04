@@ -1,5 +1,5 @@
 
-import { sendEmail } from '../../sendEmail'; // 根據你的檔案結構調整路徑
+import { sendEmail } from '../../sendEmail.mjs'; // 根據你的檔案結構調整路徑
 
 export async function POST(request) {
   try {

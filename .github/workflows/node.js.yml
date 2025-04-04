@@ -32,4 +32,4 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
-    - run: node app/sendEmail.js
+    - run: node app/sendEmail.mjs
