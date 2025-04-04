@@ -11,7 +11,7 @@ export default function NewsletterForm() {
     try {
       console.log("SMTP_HOST:", process.env.SMTP_HOST);
       
-      const res = await fetch('/api/subscribe', {
+      const res = await fetch('https://artfest.ntu.edu.tw/api/subscribe', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email }),
