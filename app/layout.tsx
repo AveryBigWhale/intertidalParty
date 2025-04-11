@@ -3,7 +3,7 @@ import './globals.css';
 import './home.css';
 // import Image from "next/image";
 import Navbar from './navbar';
-import emblem from '../public/emblem-1.svg'; // Adjust the path accordingly
+// import emblem from '../public/emblem-1.svg'; // Adjust the path accordingly
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
@@ -12,7 +12,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <title>潮間黨 Intertidal Party</title> {/* 這裡是網頁標題 */}
           {/* <link rel="icon" href="/favicon.ico" /> 這是 favicon 路徑 */}
           {/* 可選：支援多尺寸 icon */}
-          <link rel="icon" type="image/svg+xml" href="/emblem-1.svg" />
+          <link rel="icon" type="image/svg+xml" href="https://averybigwhale.github.io/intertidalParty/emblem-1.svg" />
           {/* <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" /> */}
         </head>
         <body className="bg-gray-100 text-gray-900">
