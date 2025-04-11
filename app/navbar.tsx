@@ -18,7 +18,7 @@ const Navbar = () => {
         <div className={`flex items-center ${isOpen ? 'hidden' : ''}`}>
           <div className="mr-2 relative w-16 h-16 rounded-full overflow-hidden shadow-lg"
             style={{
-              backgroundImage: `url(${ImageLoader({ src: '/emblem.png' })})`,
+              backgroundImage: `url(${ImageLoader({ src: '/emblem-1.svg' })})`,
               backgroundSize: 'cover',
               // // backgroundSize: `${windowSize.width}px ${windowSize.height}px`,
               backgroundPosition: 'center',
@@ -43,7 +43,7 @@ const Navbar = () => {
             <li>
               <Link href="/news" className="block hover:text-gray-700 ">最新消息</Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/subscribe" className="
                 block md:inline
                 text-customRed
@@ -56,7 +56,7 @@ const Navbar = () => {
                 hover:bg-customRed
                 hover:text-white
                 transition-colors">訂閱電子報</Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
         <div className="md:hidden">

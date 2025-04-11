@@ -11,10 +11,7 @@ const nextConfig = {
   basePath: isProd ? '/intertidal' : '',
   // output: 'export',
   distDir: 'dist',
-  images: {
-    loader: 'custom', // 使用你自定義的 loader
-    unoptimized: true, // 禁用內建圖片優化功能
-  },
+  
   // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
   // trailingSlash: true,
   
