@@ -5,11 +5,13 @@ import React from 'react';
 import Image from 'next/image';
 import ImageLoader from '@/components/ImageLoader'; // Adjust the path as necessary
 
-import news1 from '../../public/elected.png';
-import news2 from '../../public/school.png';
-import news3 from '../../public/health.png';
 
-const newsImages = [news1, news2, news3];
+import policy1 from '@/public/education.png';
+import policy2 from '@/public/budget.png';
+import policy3 from '@/public/health.png';
+import policy4 from '../../public/court.png';
+
+const newsImages = [policy1, policy2, policy3, policy4];
 const NewsList = () => {
   return (
     <div className="min-h-screen bg-white py-12 px-8">
@@ -17,7 +19,7 @@ const NewsList = () => {
 
       <div className="space-y-12">
         {newsData.map((news) => (
-          <Link key={news.id} href={`/news/${news.id}`}>
+          <Link key={news.id} href={`/policy/${news.id}`}>
             <div className="cursor-pointer hover:shadow-lg transition-shadow duration-300 border border-gray-200 rounded-xl overflow-hidden p-6 flex flex-col md:flex-row gap-6 bg-gray-50">
               
               {/* 圖片區塊 */}

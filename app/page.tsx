@@ -14,17 +14,18 @@ import newspaperIcon from "../public/newspaper_icon.svg"; // Adjust the path acc
 import loudspeakerIcon from "../public/loudspeaker_icon.svg"; // Adjust the path accordingly
 import elected from "../public/elected.png"; // Adjust the path accordingly
 // import protest from "../public/protest.png"; // 新增導入
-import uncleSam from "../public/uncleSam.png"; // 新增導入
+import interu from "../public/interU.png"; // 新增導入
 import school from "../public/school.png"; // 新增導入
 import budget from "../public/budget.png"; // 新增導入
 import health from "../public/health.png"; // 新增導入
 import banner from "../public/banner.png"; // 新增導入
 import education from "../public/education.png"; // 新增導入
+import court from "../public/court.png"; // 新增導入
 // import Navbar from "./navbar";
 // import ImageLoader from '../components/ImageLoader'; // Adjust the path as necessary
 
-const newsImages = [elected, school, uncleSam];
-const policyImages = [education, budget, health];
+const newsImages = [elected, school, interu];
+const policyImages = [education, budget, health, court];
 
 export default function HomePage() {
   // const news = [

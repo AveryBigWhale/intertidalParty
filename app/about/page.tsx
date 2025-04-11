@@ -53,6 +53,83 @@ export default function Home() {
         <div className="absolute inset-0 bg-black opacity-50 pointer-events-none" /> {/* 使用 Tailwind CSS 的類來設置黑色和透明度 */}
 
       </section>
+      {/* 六大主軸 Section */}
+    {/* 深化。共感民主 */}
+    <section className="h-full snap-start bg-white py-20 px-6">
+        <div className="max-w-5xl mx-auto space-y-12">
+            <div className="text-4xl md:text-5xl font-bold leading-snug text-purple-500">深化。共感民主</div>
+            <div className="text-gray-700 text-lg leading-relaxed space-y-6">
+            <p>讓每個意識，都被誠實看見。</p>
+            <p>民主不是一種制度，而是一種集體意志的進化。潮間黨相信，真正的民主，來自深層的聆聽與彼此共感的能力。</p>
+            <p>我們推動「情感回饋式政決系統」，讓公民參與不只是投票，更是持續的心智連結。從地方到國政，建構透明而有溫度的治理模型，讓民主不只是機制，更是文明的情感表達。</p>
+            </div>
+        </div>
+    </section>
+
+    {/* 照護。生命共享 */}
+    <section className="h-full snap-start bg-white py-20 px-6">
+        <div className="max-w-5xl mx-auto space-y-12">
+            <div className="text-4xl md:text-5xl font-bold leading-snug text-pink-500">照護。生命共享</div>
+            <div className="text-gray-700 text-lg leading-relaxed space-y-6">
+            <p>每段人生，都值得被完整承接。</p>
+            <p>潮間黨以「全齡潮間醫療」為核心，推動從出生到終老的流動式照護系統，特別關注因技術變異而形成的新族群（如 U人）的醫療正義與社會融合。</p>
+            <p>O-o 再分配政策，將生醫資源重新定義為公共資本，以社會參與換取更公平的療癒權利。我們不相信放任與排除，我們主張關照與再生。</p>
+            </div>
+        </div>
+    </section>
+
+    {/* 守護。文明主權 */}
+    <section className="h-full snap-start bg-white py-20 px-6">
+        <div className="max-w-5xl mx-auto space-y-12">
+            <div className="text-4xl md:text-5xl font-bold leading-snug text-emerald-600">守護。文明主權</div>
+            <div className="text-gray-700 text-lg leading-relaxed space-y-6">
+            <p>科技不僅為國用，更為人類而生。</p>
+            <p>潮間黨不僅守護台灣的土地，更捍衛這片土地上科技文明的價值選擇權。我們的主權，來自我們選擇如何定義進步的方式。</p>
+            <p>在全球激變中，潮間黨倡議「靈性科技外交」，以台灣為全球心智倫理中心，結合創新與慈悲，建立文明型安全系統，對抗單一意識形態的擴張。</p>
+            </div>
+        </div>
+    </section>
+
+    {/* 定位。潮帶外交 */}
+    <section className="h-full snap-start bg-white py-20 px-6">
+        <div className="max-w-5xl mx-auto space-y-12">
+            <div className="text-4xl md:text-5xl font-bold leading-snug text-cyan-600">定位。潮帶外交</div>
+            <div className="text-gray-700 text-lg leading-relaxed space-y-6">
+            <p>從邊緣地帶，向世界中心發聲。</p>
+            <p>潮間黨以「潮帶策略」重塑台灣地緣角色，從極地研究、太空軌道、深海生態等前沿合作中，建立新型國際聯盟。</p>
+            <p>我們主張「以科技為橋、以信念為舟」，與亞太、北歐及泛極圈國家建立深度潮帶網絡，推動生命安全、環境復元與跨文化交流的全球方案。</p>
+            </div>
+        </div>
+    </section>
+
+    {/* 創新。綠智融合 */}
+    <section className="h-full snap-start bg-white py-20 px-6">
+        <div className="max-w-5xl mx-auto space-y-12">
+            <div className="text-4xl md:text-5xl font-bold leading-snug text-teal-600">創新。綠智融合</div>
+            <div className="text-gray-700 text-lg leading-relaxed space-y-6">
+            <p>開發不是消耗，是創造更多再生的未來。</p>
+            <p>潮間黨推動「生態—意識經濟模式」，整合綠能、心智科技與文化技術，打造具有再生循環能力的區域經濟實驗區。</p>
+            <p>我們反對線性成長，倡導「複層發展」，讓城市與鄉村共同成為未來文明的孵化場，取代高污染產業，以低耗能高韌性的智慧系統為核心，保障世代共生。</p>
+            </div>
+        </div>
+    </section>
+
+    {/* 重構。幸福定義 */}
+    <section className="h-full snap-start bg-white py-20 px-6">
+        <div className="max-w-5xl mx-auto space-y-12">
+            <div className="text-4xl md:text-5xl font-bold leading-snug text-yellow-600">重構。幸福定義</div>
+            <div className="text-gray-700 text-lg leading-relaxed space-y-6">
+            <p>活得更久，也活得更深。</p>
+            <p>GDP 無法衡量靈魂的重量。潮間黨提出「全域感知型幸福指標」，將生活節奏、心理韌性、情感密度與文化參與納入政策評估基礎。</p>
+            <p>我們推動社會經濟新模式，以教育、醫療、環境、科技與宗教系統並進的方式，重塑生活品質的定義。幸福不只是現實的改善，更是意識的進化。</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
       {/* <NewsSection className="snap-start"/> */}
       {/* <section className='h-screen h-full snap-start flex flex-col mt-0'>
         

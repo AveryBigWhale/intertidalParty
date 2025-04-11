@@ -7,16 +7,17 @@ import policyData from '@/app/policy/policyData.json';
 import Image from 'next/image';
 import ImageLoader from './ImageLoader'; // Adjust the path as necessary
 import news1 from '../public/elected.png';
-import news2 from '../public/protest.png';
-import news3 from '../public/uncleSam.png';
+import news2 from '../public/school.png';
+import news3 from '../public/interU.png';
 
 
 import policy1 from '../public/education.png';
-import policy2 from '../public/protest.png';
-import policy3 from '../public/uncleSam.png';
+import policy2 from '../public/budget.png';
+import policy3 from '../public/health.png';
+import policy4 from '../public/court.png';
 
 const newsImages = [news1, news2, news3];
-const policyImages = [policy1, policy2, policy3];
+const policyImages = [policy1, policy2, policy3, policy4];
 
 type Props = {
   id: string;

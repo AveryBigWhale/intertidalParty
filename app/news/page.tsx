@@ -5,12 +5,13 @@ import React from 'react';
 import Image from 'next/image';
 import ImageLoader from '@/components/ImageLoader'; // Adjust the path as necessary
 
-import news1 from '../../public/elected.png';
-import news2 from '../../public/school.png';
-import news3 from '../../public/health.png';
+import news1 from '@/public/elected.png';
+import news2 from '@/public/school.png';
+import news3 from '@/public/interU.png';
+
 
 const newsImages = [news1, news2, news3];
-
+// const policyImages = [policy1, policy2, policy3, policy4];
 
 const NewsList = () => {
   return (

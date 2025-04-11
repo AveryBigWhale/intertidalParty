@@ -43,6 +43,9 @@ const Navbar = () => {
             <li>
               <Link href="/news" className="block hover:text-gray-700 ">最新消息</Link>
             </li>
+            <li>
+              <Link href="/policy" className="block hover:text-gray-700 ">政策宣傳</Link>
+            </li>
             {/* <li>
               <Link href="/subscribe" className="
                 block md:inline
