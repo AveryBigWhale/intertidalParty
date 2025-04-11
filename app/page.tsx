@@ -1,7 +1,8 @@
 "use client";
 
 import Link from 'next/link';
-import Image, { StaticImageData } from "next/image"; // Add StaticImageData import
+import Image from "next/image"; // Add StaticImageData import
+// { StaticImageData }
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from 'swiper/modules';
 import newsData from '@/app/news/newsData.json';
@@ -12,7 +13,7 @@ import './globals.css';
 import newspaperIcon from "../public/newspaper_icon.svg"; // Adjust the path accordingly
 import loudspeakerIcon from "../public/loudspeaker_icon.svg"; // Adjust the path accordingly
 import elected from "../public/elected.png"; // Adjust the path accordingly
-import protest from "../public/protest.png"; // 新增導入
+// import protest from "../public/protest.png"; // 新增導入
 import uncleSam from "../public/uncleSam.png"; // 新增導入
 import school from "../public/school.png"; // 新增導入
 import budget from "../public/budget.png"; // 新增導入

@@ -13,7 +13,6 @@ type NewsItem = {
   imageUrl: string;
 };
 
-
 type Params = Promise<{ id: string }>
 // type Props = {
 //   params: { id: string };
@@ -53,7 +52,7 @@ export default async function Page(props: { params: Params }) {
 
   if (!news) return <div>找不到資料</div>;
 
-  return <NewsDetail id={params.id} />;
+  return <NewsDetail id={params.id} title='news'/>;
 }
 
 // export default function Page({ params }: Props) {
