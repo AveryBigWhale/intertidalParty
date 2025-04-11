@@ -15,7 +15,9 @@ const Navbar = () => {
   return (
     <header className="relative bg-intertidalLightMain">
       <div className="container mx-auto flex justify-between items-center px-6">
+      <Link href="/" className="text-2xl font-bold text-intertidalDarkMain hover:opacity-80">
         <div className={`flex items-center ${isOpen ? 'hidden' : ''}`}>
+       
           <div className="mr-2 relative w-16 h-16 rounded-full overflow-hidden shadow-lg"
             style={{
               backgroundImage: `url(${ImageLoader({ src: '/emblem-1.svg' })})`,
@@ -27,8 +29,9 @@ const Navbar = () => {
           <div>
             <h1 className="text-xl font-bold text-intertidalDarkMain">潮間黨</h1>
             <h1 className="text-lg font-bold text-intertidalDarkMain">Intertidal Party</h1>
-          </div>
-        </div>
+          </div> 
+        </div></Link>
+       
         
         
         {/* {isOpen && ( */}

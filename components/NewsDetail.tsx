@@ -56,7 +56,7 @@ const NewsDetail = ({ id, title }: Props) => {
         </div>
 
         <div
-          className="text-gray-800 mt-4"
+          className="text-gray-800 mt-4 max-w-xl"
           style={{ margin: '0 auto', textAlign: 'center', width: '75%', marginTop: '20px',
             // backgroundImage: `url(${ImageLoader({ src: newsItem.imageUrl })})`,
           }}
