@@ -18,9 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <body className="bg-gray-100 text-gray-900">
           {/* 頁首 */}
           <header className="bg-intertidalLightMain shadow-md py-4">
-          <Navbar />  
-
-           
+            <Navbar />  
           </header>
   
           {/* 主要內容 */}

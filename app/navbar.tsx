@@ -3,7 +3,7 @@
 import { useState } from 'react';
 // import Image from 'next/image';
 import Link from 'next/link';
-import ImageLoader from '../components/ImageLoader'; // Adjust the path as necessary
+import ImageLoader from '../components/ImageLoader';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,22 +15,21 @@ const Navbar = () => {
   return (
     <header className="relative bg-intertidalLightMain">
       <div className="container mx-auto flex justify-between items-center px-6">
-      <Link href="/" className="text-2xl font-bold text-intertidalDarkMain hover:opacity-80">
-        <div className={`flex items-center ${isOpen ? 'hidden' : ''}`}>
-       
-          <div className="mr-2 relative w-16 h-16 rounded-full overflow-hidden shadow-lg"
-            style={{
-              backgroundImage: `url(${ImageLoader({ src: '/emblem-1.svg' })})`,
-              backgroundSize: 'cover',
-              // // backgroundSize: `${windowSize.width}px ${windowSize.height}px`,
-              backgroundPosition: 'center',
-            }}>
-          </div>
-          <div>
-            <h1 className="text-xl font-bold text-intertidalDarkMain">潮間黨</h1>
-            <h1 className="text-lg font-bold text-intertidalDarkMain">Intertidal Party</h1>
-          </div> 
-        </div></Link>
+        <Link href="/" className="text-2xl font-bold text-intertidalDarkMain hover:opacity-80">
+          <div className={`flex items-center ${isOpen ? 'hidden' : ''}`}>
+        
+            <div className="mr-2 relative w-16 h-16 rounded-full overflow-hidden shadow-lg"
+              style={{
+                backgroundImage: `url(${ImageLoader({ src: '/emblem-1.svg' })})`,
+                backgroundSize: 'cover',
+                // // backgroundSize: `${windowSize.width}px ${windowSize.height}px`,
+                backgroundPosition: 'center',
+              }}/>
+            <div>
+              <h1 className="text-xl font-bold text-intertidalDarkMain">潮間黨</h1>
+              <h1 className="text-lg font-bold text-intertidalDarkMain">Intertidal Party</h1>
+            </div> 
+          </div></Link>
        
         
         
@@ -40,6 +39,7 @@ const Navbar = () => {
             <li>
               <Link href="/" className="block hover:text-gray-700">首頁</Link>
             </li>
+
             <li>
               <Link href="/about" className="block hover:text-gray-700 ">關於潮間黨</Link>
             </li>
